@@ -1,11 +1,16 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,.memberLogin, .proceedButton, .footer1, .footer2 {
     font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
 }
 
+/*LoginPage Header*/
+.LoginHeader{
+    margin-top:30px;
+    margin-bottom:10px;
+}
 .header1{
 	text-transform: uppercase;
     font-size: 40px;
-    margin: 0;
+    margin: 10px;
     font-weight: 800;
     color:white;
     text-shadow: 2px 2px 8px #000;
@@ -18,3 +23,54 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
     color:#700000;
 }
+
+/*LoginPage Container*/
+.loginContainer{
+    border-radius: 10px;
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#dddddd8f;
+    margin-top:25px;
+}
+
+.memberLogin{
+    margin-top:20px;
+    margin-bottom:10px;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.fas{
+    color:#700000;
+}
+
+.fa-user-alt{
+    font-size: 8em;
+}
+
+.proceedButton{
+    color: #f5f5f5;
+    background-color: #700000;
+}
+.proceedButton:hover{
+    color: #700000;
+    background-color: #f5f5f5;
+}
+
+.footer1{
+    color:#777;
+    margin-top:20px;
+    margin-bottom:0;
+    font-size: 0.8em;
+}
+.footer2{
+    color:#777;
+    margin-bottom:0;
+    font-size: 0.8em;
+}
+/*
+.loginDetails{
+    background-color:#dddddd8f;
+}*/
