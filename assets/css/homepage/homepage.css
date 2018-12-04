@@ -1,0 +1,23 @@
+.homepageContent{
+	text-align: center;
+}
+
+.getStartedBtn{
+    color: #f5f5f5;
+    background-color: #700000;
+}
+.getStartedBtn:hover{
+    color: #700000;
+    background-color: #f5f5f5;
+}
+
+.passForgot1{
+    margin-bottom:0;
+    margin-top:20px;
+    font-size:1.4em;
+}
+
+.homepageIcon{
+	font-size:4em;
+	color:#700000;
+}

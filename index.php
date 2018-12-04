@@ -42,7 +42,7 @@
                 <i class="fas fa-user-alt"></i>
                 <!-- <i class="fas fa-user-circle"></i> -->
                 <p class='memberLogin'>Member Login</p>
-                <form>
+                <form action="homepage/homepage.php">
                     <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-addon"><i class="fas fa-id-badge"></i></span></div>
@@ -61,6 +61,11 @@
                         Log In
                     </button>
                 </form>
+
+                <p class='passForgot1'>Forgot your password?</p>
+                <p class='passForgot2'>Click <a href='' class='passReset'>here</a> to reset your password</p>
+
+
                 <p class='footer1'>2018 &copy; GT Northeast Academy</p>
                 <p class='footer2'>GSIS (GTNA Student's Information System)</p>
             </div>

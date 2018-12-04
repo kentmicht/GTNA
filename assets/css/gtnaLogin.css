@@ -59,6 +59,28 @@ h1, h2, h3, h4, h5, h6,.memberLogin, .proceedButton, .footer1, .footer2 {
     background-color: #f5f5f5;
 }
 
+.passForgot1{
+    margin-bottom:0;
+    margin-top:20px;
+    font-size:1.4em;
+}
+
+.passForgot2{
+    
+}
+
+.passReset{
+    color:#700000;
+}
+
+.passReset:hover{
+    color:#f5f5f5;
+    text-decoration: none;
+}
+
+.endFooter{
+    margin:10px;
+}
 .footer1{
     color:#777;
     margin-top:20px;
