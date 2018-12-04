@@ -39,20 +39,37 @@
                 <div class="col-md-3">.col-md-1</div>
             </div> -->
             <div class="row loginContainer col-md-4 col-md-offset-4">
+                <?php
+                    // if(!isset($_POST['idNumber']) && !isset($_POST['password'])){
+                    //     if(isset($_POST['idNumber']) == '15100375' && isset($_POST['password']) == 'kentmicht'){
+                    //         echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>Incorrect Username/Password</p>";
+                    //         header("Location: homepage/homepage.php");
+                    //     }
+                    //     // else{
+                    //     //     // // header("Location: homepage/homepage.php");
+                    //     //     // // exit;
+                    //     //     // echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>LAVAN!</p>";
+                    //     // }
+                    // }else{
+                    //     echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>Username/Password is empty</p>";
+                    // }
+                    
+
+                ?>
                 <i class="fas fa-user-alt"></i>
                 <!-- <i class="fas fa-user-circle"></i> -->
                 <p class='memberLogin'>Member Login</p>
-                <form action="homepage/homepage.php">
+                <form action="homepage/homepage.php" method='POST'>
                     <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-addon"><i class="fas fa-id-badge"></i></span></div>
-                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="ID Number">
+                          <input type="text" class="form-control" id="idNumber" name='idNumber' placeholder="ID Number">
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-addon"><i class="fas fa-key"></i></span></div>
-                          <input type="text" class="form-control" id="exampleInputAmount" placeholder="Password">
+                          <input type="password" class="form-control" id="password" name='password' placeholder="Password">
                         </div>
                     </div>
                     <button type="submit" class="btn proceedButton" style='font-weight: 800;

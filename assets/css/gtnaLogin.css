@@ -2,6 +2,16 @@ h1, h2, h3, h4, h5, h6,.memberLogin, .proceedButton, .footer1, .footer2 {
     font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
 }
 
+/*notfication*/
+.indexNotif{
+    color:#700000;
+    font-weight: bold;
+}
+
+.indexIcon{
+    padding-right:5px;
+}
+
 /*LoginPage Header*/
 .LoginHeader{
     margin-top:30px;

@@ -1,0 +1,17 @@
+
+@media (min-width: 768px){
+    .asessment {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+.asessment {
+    margin-top:50px;
+}
+.asessmentContent{
+	background-color: #eee;
+	margin-top:5px;
+	padding-top:50px;
+	padding-bottom:50px;
+	border-radius: 10px;
+}

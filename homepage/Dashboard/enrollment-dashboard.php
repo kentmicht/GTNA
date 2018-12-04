@@ -12,17 +12,17 @@
         <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
         <meta name="author" content="Codrops" /> -->
         <!-- <link rel="shortcut icon" href="../favicon.ico">  -->
-        <link rel="icon" href="../assets/images/GTNALogo.png">
-        <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="../assets/css/homepage/overall.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="../assets/css/homepage/student.css" media="all"/>
+        <link rel="icon" href="../../assets/images/GTNALogo.png">
+        <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/overall.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/dashboard.css" media="all"/>
 		<!-- <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script> -->
-        <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../../assets/fontawesome/css/all.min.css">
 
     </head>
     <body>
     	<nav class="navbar navbar-default navbar-fixed-top">
-		  <div class="container-fluid">
+		  <div class="container-fluid navbar-gtna">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -41,9 +41,9 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		      	<li><a href="homepage.php"><i class="fas fa-home"></i> Home</a></li>
-		        <li><a href="dashboard.php"><i class="fas fa-align-justify"></i> Dashboard</a></li>
-		        <li class="active"><a href="student.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
-		        <li><a href="student.php"><i class="far fa-money-bill-alt"></i> student</a></li>
+		        <li class="active"><a href="dashboard.php"><i class="fas fa-align-justify"></i> Dashboard</a></li>
+		        <li><a href="student.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
+		        <li><a href="asessment.php"><i class="far fa-money-bill-alt"></i> Asessment</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -70,22 +70,27 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+
 		<div class='container-fluid'>
 			<!-- Dashboard -->
-			<div class="row containerContent">
-		        <div class='student'>
-		        	<!-- Jumbotron -->
-				      <div class="studentContent">
-				        <!-- <h1>Welcome Back <span class='idNumber' style='color:#700000'>15100375</span>!</h1>
-				        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-				        <p><a class="btn btn-lg btn-default getStartedBtn" href="dashboard.php" role="button">Get started today</a></p> -->
-				      </div>
+			<div class="row">
+		        <div class="col-sm-3 col-md-2 sidebar">
+		          <ul class="nav nav-sidebar">
+		          	<li><a href="../dashboard.php">Overview</span></a></li>
+		            <li class="active"><a href="enrollment-dashboard.php">Enrollment</span></a></li>
+		            <!-- <li><a href="#">Reports</a></li> -->
+		            <li><a href="schedule-dashboard.php">Schedule</a></li>
+		            <li><a href="academicCalendar-dashboard.php">Academic Calendar</a></li>
+		          </ul>
+		        </div>
+		        <div class='col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 mainDashboard'>
+		        	Enrollment 
+		        	<div class="footer">
+						<?php include '../footer.php'; ?>
+					</div>
 		        </div>
 	    	</div>
     	</div>
-    	<div class="footer">
-			<?php include 'footer.php'; ?>
-		</div>
     </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

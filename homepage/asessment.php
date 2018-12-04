@@ -15,7 +15,7 @@
         <link rel="icon" href="../assets/images/GTNALogo.png">
         <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../assets/css/homepage/overall.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="../assets/css/homepage/assessment.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../assets/css/homepage/asessment.css" media="all"/>
 		<!-- <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script> -->
         <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
 
@@ -31,7 +31,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">
+		      <a class="navbar-brand" href="homepage.php">
 			      <p class='brandHeader1'>GT Northeast Academy</p>
 			      <p class='brandHeader2'>Student's Information System</p>
 		  	  </a>
@@ -70,11 +70,22 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<div class='container-fluid'>
+    	<div class='container-fluid'>
 			<!-- Dashboard -->
-			<div class="row">
-		        <div class='col-sm-9 col-md-10 main'>
-		        	Assessment
+			<div class="row containerContent">
+		        <div class='asessment'>
+		        	<!-- Jumbotron -->
+				      <div class="asessmentContent">
+				        <!-- <h1>Welcome Back <span class='idNumber' style='color:#700000'>15100375</span>!</h1>
+				        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+				        <p><a class="btn btn-lg btn-default getStartedBtn" href="dashboard.php" role="button">Get started today</a></p> -->
+				      </div>
+
+				      <div class="asessmentContent">
+				        <!-- <h1>Welcome Back <span class='idNumber' style='color:#700000'>15100375</span>!</h1>
+				        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+				        <p><a class="btn btn-lg btn-default getStartedBtn" href="dashboard.php" role="button">Get started today</a></p> -->
+				      </div>
 		        </div>
 	    	</div>
     	</div>

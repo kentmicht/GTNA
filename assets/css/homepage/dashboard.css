@@ -22,3 +22,13 @@ a:hover {
     color: #940303;
     text-decoration: none;
 }
+
+a:visited {
+    color: #940303;
+    text-decoration: none;
+}
+
+a:focus {
+    color: #940303;
+    text-decoration: none;
+}

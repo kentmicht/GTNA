@@ -34,7 +34,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">
+		      <a class="navbar-brand" href="homepage.php">
 			      <p class='brandHeader1'>GT Northeast Academy</p>
 			      <p class='brandHeader2'>Student's Information System</p>
 		  	  </a>
