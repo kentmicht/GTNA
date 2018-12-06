@@ -32,3 +32,71 @@ a:focus {
     color: #940303;
     text-decoration: none;
 }
+
+.dashboardIcons{
+    padding-right:10px;
+}
+
+/*dashboard paraphernalias*/
+.studentHeader{
+    color:#700000;
+    font-weight: bold;
+}
+
+.studentCorner{
+    background-color:yellow;
+    left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f5f5f5;
+   padding-top:10px;
+   padding-right:20px;
+   padding-left:20px;
+   border-radius:10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*table*/
+table {
+    width: 100%;
+}
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+thead th {
+    height: 50px;
+    padding-left:10px;
+}
+
+tbody {
+    height: 200px;
+    overflow-y: auto;
+}
+
+thead {
+    /* fallback */
+}
+
+
+tbody td, thead th {
+    width: 19.2%;
+    float: left;
+}
+
+/*Dashboard Overview*/
+.dashboardOverview{
+    margin-bottom:20px;
+    padding-bottom:25px;
+}
+
+.dashboardIcon{
+    font-size:4em;
+    color:#700000;
+}

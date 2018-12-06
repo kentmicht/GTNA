@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/overall.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/dashboard.css" media="all"/>
-        <link rel="stylesheet" type="text/css" href="../../assets/css/dashboard/schedule-dashboard.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../../assets/css/dashboard/student-dashboard.css" media="all"/>
 		<!-- <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script> -->
         <link rel="stylesheet" type="text/css" href="../../assets/fontawesome/css/all.min.css">
 
@@ -65,16 +65,16 @@
 		        <div class="col-sm-3 col-md-2 sidebar">
 		          <ul class="nav nav-sidebar">
 		          	<li><a href="../dashboard.php"><i class="far fa-eye dashboardIcons"></i>Overview</span></a></li>
-		          	<li><a href="students-dashboard.php"><i class="fas fa-book-open dashboardIcons"></i>Students</span></a></li>
+		          	<li class="active"><a href="students-dashboard.php"><i class="fas fa-book-open dashboardIcons"></i>Students</span></a></li>
 		            <li><a href="asessment-dashboard.php"><i class="fas fa-money-bill-alt dashboardIcons"></i>Student Asessment</span></a></li>
-		            <li class="active"><a href="schedule-dashboard.php"><i class="fas fa-clock dashboardIcons"></i>Student Schedule</a></li>
+		            <li><a href="schedule-dashboard.php"><i class="fas fa-clock dashboardIcons"></i>Student Schedule</a></li>
 		            <li><a href="academicCalendar-dashboard.php"><i class="far fa-calendar-alt dashboardIcons"></i>Academic Calendar</a></li>
 		          </ul>
 		        </div>
 		        <div class='col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 mainDashboard'>
 		        	<div class='studentCorner'>
 			        	<!-- <div class="container studentCorner"> -->
-						  <h1 class='studentHeader'>Student's Schdule</h1>
+						  <h1 class='studentHeader'>Student List</h1>
 						  <p>The .input-group-btn class attaches a button next to an input field. This is often used as a search bar:</p>
 						  <form action="/action_page.php">
 						  	<div class="input-group">
@@ -116,7 +116,9 @@
 						        <td>Doe</td>
 						        <td>Grade 1</td>
 						        <td class='text-center'>
-						        	<button type="button" class="btn btn-default"><i class="far fa-calendar-alt btnSchedule"></i></i></button>
+						        	<button type="button" class="btn btn-default"><i class="fas fa-user-alt btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-edit btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-times btnStudent"></i></button>
 						        </td>
 						      </tr>
 						      <tr>
@@ -125,7 +127,9 @@
 						        <td>Moe</td>
 						        <td>Grade 2</td>
 						        <td class='text-center'>
-						        	<button type="button" class="btn btn-default"><i class="far fa-calendar-alt btnSchedule"></i></i></button>
+						        	<button type="button" class="btn btn-default"><i class="fas fa-user-alt btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-edit btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-times btnStudent"></i></button>
 						        </td>
 						      </tr>
 						      <tr>
@@ -134,7 +138,9 @@
 						        <td>Dooley</td>
 						        <td>Grade 3</td>
 						        <td class='text-center'>
-						        	<button type="button" class="btn btn-default"><i class="far fa-calendar-alt btnSchedule"></i></i></button>
+						        	<button type="button" class="btn btn-default"><i class="fas fa-user-alt btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-edit btnStudent"></i></button>
+									<button type="button" class="btn btn-default"><i class="fas fa-user-times btnStudent"></i></button>
 						        </td>
 						      </tr>
 						    </tbody>
@@ -142,7 +148,7 @@
 						<!-- </div> -->
 					</div>
 		        	<div class="footer">
-						<div class='container-fluid'>
+		        		<div class='container-fluid'>
 							<?php include '../footer.php'; ?>
 						</div>
 					</div>

@@ -41,21 +41,8 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		      	<li><a href="homepage.php"><i class="fas fa-home"></i> Home</a></li>
-		        <li class="active"><a href="dashboard.php"><i class="fas fa-align-justify"></i> Dashboard</a></li>
-		        <li><a href="student.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
-		        <li><a href="asessment.php"><i class="far fa-money-bill-alt"></i> Asessment</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
+		        <li class="active"><a href="dashboard.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
+		        <li><a href="teacher.php"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="dropdown">
@@ -76,17 +63,50 @@
 			<div class="row">
 		        <div class="col-sm-3 col-md-2 sidebar">
 		          <ul class="nav nav-sidebar">
-		          	<li class="active"><a href="dashboard.php">Overview</span></a></li>
-		            <li><a href="Dashboard/enrollment-dashboard.php">Enrollment</span></a></li>
-		            <!-- <li><a href="#">Reports</a></li> -->
-		            <li><a href="Dashboard/schedule-enrollment.php">Schedule</a></li>
-		            <li><a href="Dashboard/academicCalendar-dashboard.php">Academic Calendar</a></li>
+		          	<li class="active"><a href="dashboard.php"><i class="far fa-eye dashboardIcons"></i>Overview</span></a></li>
+		          	<li><a href="Dashboard/students-dashboard.php"><i class="fas fa-book-open dashboardIcons"></i>Students</span></a></li>
+		            <li><a href="Dashboard/asessment-dashboard.php"><i class="fas fa-money-bill-alt dashboardIcons"></i>Student Asessment</span></a></li>
+		            <li><a href="Dashboard/schedule-dashboard.php"><i class="fas fa-clock dashboardIcons"></i>Student Schedule</a></li>
+		            <li><a href="Dashboard/academicCalendar-dashboard.php"><i class="far fa-calendar-alt dashboardIcons"></i>Academic Calendar</a></li>
 		          </ul>
 		        </div>
 		        <div class='col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 mainDashboard'>
-		        	Dashboard
+		        	<div class='studentCorner'>
+			        	<!-- <div class="container studentCorner"> -->
+						  <h1 class='studentHeader'>Student's Corner</h1>
+						  <p>The .input-group-btn class attaches a button next to an input field. This is often used as a search bar:</p>
+						  
+
+						  <div class="row dashboardOverview">
+					        <div class="col-lg-3">
+					          <h2 class='text-center'><i class="far fa-address-book dashboardIcon"></i></i></i></h2>
+					          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					          <p class='text-center'><a class="btn btn-default getStartedBtn" href="Dashboard/students-dashboard.php" role="button">View details &raquo;</a></p>
+					        </div>
+
+					        <div class="col-lg-3">
+					          <h2 class='text-center'><i class="far fa-money-bill-alt dashboardIcon"></i></i></h2>
+					          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					          <p class='text-center'><a class="btn btn-default getStartedBtn" href="Dashboard/asessment-dashboard.php" role="button">View details &raquo;</a></p>
+					        </div>
+					        <div class="col-lg-3">
+					          <h2 class='text-center'><i class="far fa-clock dashboardIcon"></i></h2>
+					          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					          <p class='text-center'><a class="btn btn-default getStartedBtn" href="Dashboard/schedule-dashboard.php" role="button">View details &raquo;</a></p>
+					       </div>
+					        <div class="col-lg-3">
+					          <h2 class='text-center'><i class="far fa-calendar-alt dashboardIcon"></i></h2>
+					          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+					          <p class='text-center'><a class="btn btn-default getStartedBtn" href="Dashboard/academicCalendar-dashboard.php" role="button">View details &raquo;</a></p>
+					        </div>
+				         </div>
+						<!-- </div> -->
+					</div>
+
 		        	<div class="footer">
-						<?php include 'footer.php'; ?>
+						<div class='container-fluid'>
+							<?php include 'footer.php'; ?>
+						</div>
 					</div>
 		        </div>
 	    	</div>

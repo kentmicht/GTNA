@@ -1,4 +1,4 @@
-<div class='container-fluid'>
+
   	<div class="row firstFooter">
 	  <div class="col-xs-6 col-sm-4 footer1">
 	  	<p class='footHeader'>ABOUT US</p>
@@ -21,4 +21,3 @@
 	<div class='row endFooter'>
 		<p class='footerCopyright1'>2018 &copy; GT Northeast Academy - GSIS (GTNA Student's Information System)</p>
 	</div>
-</div>

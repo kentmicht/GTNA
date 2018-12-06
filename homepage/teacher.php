@@ -41,21 +41,8 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		      	<li><a href="homepage.php"><i class="fas fa-home"></i> Home</a></li>
-		        <li><a href="dashboard.php"><i class="fas fa-align-justify"></i> Dashboard</a></li>
-		        <li><a href="student.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
-		        <li class="active"><a href="asessment.php"><i class="far fa-money-bill-alt"></i> Asessment</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
+		        <li><a href="dashboard.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
+		        <li class="active"><a href="teacher.php"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li class="dropdown">
@@ -90,7 +77,9 @@
 	    	</div>
     	</div>
     	<div class="footer">
-			<?php include 'footer.php'; ?>
+			<div class='container-fluid'>
+				<?php include 'footer.php'; ?>
+			</div>
 		</div>
     </body>
 </html>
