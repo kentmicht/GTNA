@@ -1,0 +1,7 @@
+GTNA Colors
+
+Gold: #e09d1a
+Maroon: #700000
+Green: #026b20
+White: #f5f5f5
+Light Grey: #777

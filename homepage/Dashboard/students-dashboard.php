@@ -292,7 +292,7 @@
 						  	</p>
 						  	<p>
 						  		<i class="col-md-1 fas fa-user studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Student Name:</span> 
+						  		<span class='personInfoLabel'>Student Name: <i>(Firstname Middlename Lastname)</i></span> 
 						  		<span class='studName'>
 						  			<input type="text" placeholder='Student Name' class="form-control col-md-offset-1" id="studNameEdit" name='studNameEdit'>
 						  		</span>
@@ -313,7 +313,7 @@
 						  	</p>
 						  	<p>
 						  		<i class="col-md-1 fas fa-map-marker-alt studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Address:</span> 
+						  		<span class='personInfoLabel'>Address: <i>(Home Address, Zip Code)</i></span> 
 						  		<span class='studAddress'>
 						  			<input type="text" placeholder='Address' class="form-control col-md-offset-1" id="addressEdit" name='addressEdit'>
 						  		</span>
@@ -362,14 +362,14 @@
 						  <div class="col-md-10 personInfoFirst">
 						  	<p>
 						  		<i class="col-md-1 fas fa-user studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Guardian Name:</span> 
+						  		<span class='personInfoLabel'>Guardian Name: <i>(Firstname Middlename Lastname)</i></span> 
 						  		<span class='guardianName'>
 						  			<input type="text" placeholder='Guardian Name' class="form-control col-md-offset-1" id="guardName" name='guardName'>
 						  		</span>
 						  	</p>
 						  	<p>
 						  		<i class="col-md-1 fas fa-map-marker-alt studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Address:</span> 
+						  		<span class='personInfoLabel'>Address: <i>(Home Address, Zip Code)</i></span> 
 						  		<span class='guardianAddress'>
 						  			<input type="text" placeholder='Address' class="form-control col-md-offset-1" id="guardAddress" name='guardAddress'>
 						  		</span>
@@ -386,7 +386,6 @@
 			        </div>
 			        <div class="modal-footer">
 			        	<button type="submit" class="btn btn-default btnModalStudent"><i class="fas fa-plus"></i> Add</button>
-			          	<button type="button" class="btn btn-default btnCloseModal" data-dismiss="modal">Close</button>
 			        </div>
 		      	</form>
 		      </div>
@@ -401,7 +400,7 @@
 		      <div class="modal-content">
 		        <div class="modal-header">
 		          <button type="button" class="close" data-dismiss="modal">&times;</button>
-		          <h4 class="modal-title studentName">Edit Student's Information</h4>
+		          <h4 class="modal-title studentNameMain"><i class="fas fa-user"></i> Edit <span class='studentName'> Kent Michael's</span> Information</h4>
 		        </div>
 
 		        <!-- Form Class for Edit Patient -->
@@ -421,7 +420,7 @@
 							  	</p>
 							  	<p>
 							  		<i class="col-md-1 fas fa-user studentInfoIcon"></i>
-							  		<span class='personInfoLabel'>Student Name:</span> 
+							  		<span class='personInfoLabel'>Student Name:  <i>(Firstname Middlename Lastname)</i></span> 
 							  		<span class='studName'>
 							  			<input type="text" value='Kent Michael K. Talisaysay' placeholder='Student Name' class="form-control col-md-offset-1" id="studNameEdit" name='studNameEdit'>
 							  		</span>
@@ -442,7 +441,7 @@
 							  	</p>
 							  	<p>
 							  		<i class="col-md-1 fas fa-map-marker-alt studentInfoIcon"></i>
-							  		<span class='personInfoLabel'>Address:</span> 
+							  		<span class='personInfoLabel'>Address: <i>(Home Address, Zip Code)</i></span> 
 							  		<span class='studAddress'>
 							  			<input type="text" value='493 Sta. Catalina Subdivision Yati Liloan, Cebu 6002' placeholder='Address' class="form-control col-md-offset-1" id="addressEdit" name='addressEdit'>
 							  		</span>
@@ -491,14 +490,14 @@
 						  <div class="col-md-10 personInfoFirst">
 						  	<p>
 						  		<i class="col-md-1 fas fa-user studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Guardian Name:</span> 
+						  		<span class='personInfoLabel'>Guardian Name:  <i>(Firstname Middlename Lastname)</i></span> 
 						  		<span class='guardianName'>
 						  			<input type="text" value='Michael M. Talisaysay' placeholder='Guardian Name' class="form-control col-md-offset-1" id="guardName" name='guardName'>
 						  		</span>
 						  	</p>
 						  	<p>
 						  		<i class="col-md-1 fas fa-map-marker-alt studentInfoIcon"></i>
-						  		<span class='personInfoLabel'>Address:</span> 
+						  		<span class='personInfoLabel'>Address: <i>(Home Address, Zip Code)</i></span> 
 						  		<span class='guardianAddress'>
 						  			<input type="text" value='493 Sta. Catalina Subdivision Yati Liloan, Cebu 6002' placeholder='Address' class="form-control col-md-offset-1" id="guardAddress" name='guardAddress'>
 						  		</span>
@@ -515,7 +514,6 @@
 			        </div>
 			        <div class="modal-footer">
 			        	<button type="submit" class="btn btn-default btnModalStudent"><i class="fas fa-pen"></i> Update</button>
-			          	<button type="button" class="btn btn-default btnCloseModal" data-dismiss="modal">Close</button>
 			        </div>
 		    	</form>
 		      </div>
@@ -530,14 +528,13 @@
 		      <div class="modal-content">
 		        <div class="modal-header">
 		          <button type="button" class="close" data-dismiss="modal">&times;</button>
-		          <h4 class="modal-title studentName">Delete Student</h4>
+		          <h4 class="modal-title studentNameMain"><i class="fas fa-trash-alt"></i> Delete <span class='studentName'> Kent Michael</span></h4>
 		        </div>
 		        <div class="modal-body">
 		          Are you sure you want to delete <span class='studName'>Student's Name</span>
 		        </div>
 		        <div class="modal-footer">
-		        	<button type="button" class="btn btn-default btnModalStudent">Delete</button>
-		          	<button type="button" class="btn btn-default btnCloseModal" data-dismiss="modal">Close</button>
+		        	<button type="button" class="btn btn-default btnModalStudent"><i class="fas fa-trash-alt"></i> Delete</button>
 		        </div>
 		      </div>
 		      
