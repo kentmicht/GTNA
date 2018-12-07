@@ -32,7 +32,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="homepage.php">
+		      <a class="navbar-brand" href="../homepage.php">
 			      <p class='brandHeader1'>GT Northeast Academy</p>
 			      <p class='brandHeader2'>Student's Information System</p>
 		  	  </a>
@@ -116,7 +116,9 @@
 						        <td>Doe</td>
 						        <td>Grade 1</td>
 						        <td class='text-center'>
-						        	<button type="button" class="btn btn-default"><i class="far fa-eye btnAsessment"></i></button>
+						        	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#studentAsessmentModal">
+						        		<i class="far fa-eye btnAsessment"></i>
+						        	</button>
 						        </td>
 						      </tr>
 						      <tr>
@@ -149,6 +151,26 @@
 		        </div>
 	    	</div>
     	</div>
+    	<!-- Modal Student Asessment Information -->
+		<div class="modal fade" id="studentAsessmentModal" role="dialog">
+		    <div class="modal-dialog modal-lg">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title studentNameMain"><i class="far fa-money-bill-alt"></i> <span class='studentName'> Kent Michael's</span> Asessment</h4>
+		        </div>
+		        <div class="modal-body">
+		          
+		        </div>
+		        <div class="modal-footer">
+		        	<button type="button" class="btn btn-default btnCloseModal" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		</div>
     </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

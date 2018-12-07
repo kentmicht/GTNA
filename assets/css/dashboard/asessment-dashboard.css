@@ -1,3 +1,21 @@
 .btnAsessment{
 	color:#700000;
 }
+
+.studentName{
+	color:#700000;
+	font-weight: bold;
+}
+
+.studentNameMain{
+	font-weight: bold;
+}
+
+.btnCloseModal{
+	color:#700000;
+}
+
+.btnCloseModal:hover{
+	background-color:#700000;
+	color:#f5f5f5;
+}

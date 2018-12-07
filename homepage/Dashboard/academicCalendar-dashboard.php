@@ -31,7 +31,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="homepage.php">
+		      <a class="navbar-brand" href="../homepage.php">
 			      <p class='brandHeader1'>GT Northeast Academy</p>
 			      <p class='brandHeader2'>Student's Information System</p>
 		  	  </a>
@@ -71,7 +71,10 @@
 		          </ul>
 		        </div>
 		        <div class='col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 mainDashboard'>
-		        	Academic Calendar
+		        	<div id="calendar"></div>
+		        	<script src="../../assets/css/dashboard/calendar/calendar.css"></script>
+		        	<script src="../../assets/js/calendar/calendar.js"></script>
+					<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 		        	<div class="footer">
 						<div class='container-fluid'>
 							<?php include '../footer.php'; ?>

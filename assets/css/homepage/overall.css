@@ -1,6 +1,7 @@
 /* Hide for mobile, show later */
 .sidebar {
-  display: none;
+    padding-top:20px;
+  /*display: none;*/
 }
 
 @media (min-width: 768px){

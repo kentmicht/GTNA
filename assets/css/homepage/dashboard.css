@@ -100,3 +100,8 @@ tbody td, thead th {
     font-size:4em;
     color:#700000;
 }
+
+.getStartedBtn:hover{
+  color: #f5f5f5;
+  background-color:#700000;
+}
