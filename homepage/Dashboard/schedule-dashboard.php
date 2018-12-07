@@ -51,7 +51,7 @@
 		          <ul class="dropdown-menu">
 		            <li><a href="#"><i class="fas fa-id-card-alt logoutIcons"></i> Profile</a></li>
 		            <li><a href="#"><i class="fas fa-key logoutIcons"></i> Manage Password</a></li>
-		            <li><a href="../index.php"><i class="fas fa-sign-out-alt logoutIcons"></i> Logout</a></li>
+		            <li><a href="../../index.php"><i class="fas fa-sign-out-alt logoutIcons"></i> Logout</a></li>
 		          </ul>
 		        </li>
 		      </ul>
@@ -152,4 +152,4 @@
     </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../assets/bootstrap/js/bootstrap.min.js"></script>

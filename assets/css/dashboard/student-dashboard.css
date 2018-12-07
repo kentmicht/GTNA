@@ -1,3 +1,75 @@
 .btnStudent{
     color:#700000;
 }
+
+.addStudent{
+	float:right;
+	background-color:#700000;
+	color:#f5f5f5;
+}
+
+.addStudent:hover{
+	color:#700000;
+}
+
+.studentName{
+	color:#700000;
+	font-weight: bold;
+}
+
+.studentNameMain{
+	font-weight: bold;
+}
+
+.hrModal{
+	margin-top:0;
+}
+
+.btnModalStudent{
+	background-color:#700000;
+	color:#f5f5f5;
+}
+
+.btnModalStudent:hover{
+	background-color:#f5f5f5;
+	color:#700000;
+}
+
+.btnCloseModal{
+	color:#700000;
+}
+
+.btnCloseModal:hover{
+	background-color:#700000;
+	color:#f5f5f5;
+}
+
+.imgIconStudent{
+	color:#700000;
+	font-size: 12em;
+	margin-bottom:10px;
+}
+
+.studentInfoIcon{
+	color:#700000;
+}
+
+.personInfoFirst{
+	padding-left:50px;
+}
+
+.personInfoLabel{
+	font-weight: bold;
+}
+
+.personInfoHeader{
+	font-weight: bold;
+	color:#700000;
+	font-size: 1.2em;
+	margin-top:30px;
+}
+
+.personInfoDetails{
+	height: 140px;
+    overflow-y: auto;
+}
