@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="../../assets/bootstrap/css/bootstrap.min.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/overall.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/dashboard.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="../../assets/css/homepage/calendar-dashboard.css" media="all"/>
 		<!-- <script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script> -->
         <link rel="stylesheet" type="text/css" href="../../assets/fontawesome/css/all.min.css">
 
@@ -44,16 +45,7 @@
 		        <li class="active"><a href="../dashboard.php"><i class="fas fa-pencil-alt"></i> Student</a></li>
 		        <li><a href="../teacher.php"><i class="fas fa-chalkboard-teacher"></i> Teacher</a></li>
 		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user logoutMainIcon"></i> ID Number <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#"><i class="fas fa-id-card-alt logoutIcons"></i> Profile</a></li>
-		            <li><a href="#"><i class="fas fa-key logoutIcons"></i> Manage Password</a></li>
-		            <li><a href="../../index.php"><i class="fas fa-sign-out-alt logoutIcons"></i> Logout</a></li>
-		          </ul>
-		        </li>
-		      </ul>
+		      <?php include '../logoutProfile.php' ?>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
@@ -71,10 +63,9 @@
 		          </ul>
 		        </div>
 		        <div class='col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 mainDashboard'>
-		        	<div id="calendar"></div>
-		        	<script src="../../assets/css/dashboard/calendar/calendar.css"></script>
-		        	<script src="../../assets/js/calendar/calendar.js"></script>
-					<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+		        	<div class='text-center '>
+		        		<iframe class='calendarGT' src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ule8i3jv0i01lln6deblhufd14%40group.calendar.google.com&amp;color=%23711616&amp;src=en.philippines%23holiday%40group.v.calendar.google.com&amp;color=%23875509&amp;ctz=Asia%2FManila" style="border-width:0" width="1550" height="600" frameborder="0" scrolling="no"></iframe>
+		        	</div>
 		        	<div class="footer">
 						<div class='container-fluid'>
 							<?php include '../footer.php'; ?>
@@ -83,6 +74,8 @@
 		        </div>
 	    	</div>
     	</div>
+
+    	<?php include '../accountProfile.php'; ?>
     </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
