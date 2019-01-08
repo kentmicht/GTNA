@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2018 at 07:06 AM
+-- Generation Time: Jan 08, 2019 at 06:02 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -41,6 +41,7 @@ CREATE TABLE `faculty` (
 --
 
 INSERT INTO `faculty` (`id_number`, `password`, `faculty_name`, `position`, `contact_number`) VALUES
+('15100374', '123', 'New New New', 'New ', '09228221696'),
 ('15100375', '12345', 'Kent Michael Talisaysay', 'Intern', '09664118929');
 
 -- --------------------------------------------------------

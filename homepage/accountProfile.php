@@ -16,7 +16,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title studentNameMain"><i class="fas fa-user"></i><span class='studentName'> Kent Michael</span>'s Profile</h4>
+          <h4 class="modal-title studentNameMain"><i class="fas fa-user"></i><span class='studentName'> <?php echo $row['faculty_name']; ?></span>'s Profile</h4>
         </div>
         <div class="modal-body">
 	        <p class='text-center'>
@@ -49,21 +49,12 @@
 </div>
 <!-- Modal Manage Password -->
 <div class="modal fade" id="managePassword" role="dialog">
-	<?php
-	  	if(isset($_POST['confirmPass']) && isset($_POST['newPass'])){
-	  		if($_POST['confirmPass'] == $_POST['newPass']){
-	  			echo 'nice';
-	  		}else{
-	  			echo 'oops!';
-	  		}
-	  	}
-	?>
     <div class="modal-dialog modal-sm">
     	<?php 
     		//db connection
     		include '../mysqlCon.php';
 			if(isset($sessionId)){
-				$sql = "SELECT password FROM faculty WHERE id_number='".$sessionId."'";
+				$sql = "SELECT * FROM faculty WHERE id_number='".$sessionId."'";
 				$result = mysqli_query($conn, $sql);
 
 		        $row = mysqli_fetch_assoc($result);
@@ -74,7 +65,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title studentNameMain"><i class="fas fa-user-lock"></i> Manage Password for <span class='studentName'> Kent Michael</span></h4>
+          <h4 class="modal-title studentNameMain"><i class="fas fa-user-lock"></i> Manage Password for <span class='studentName'> <?php echo $row['faculty_name']; ?></span></h4>
         </div>
         <div class="modal-body">
           <p class='text-center'>
