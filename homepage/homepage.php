@@ -22,6 +22,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 
+		<?php
+			session_start();
+			if(isset($_SESSION['idNumber'])) {
+				$sessionId = $_SESSION['idNumber'];
+				$sessionName = $_SESSION['faculty_name'];
+			}
+
+		?>
+
     </head>
     <body>
     	<nav class="navbar navbar-default navbar-fixed-top">
@@ -49,11 +58,17 @@
 		      </ul>
 		      	<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user logoutMainIcon"></i> ID Number <span class="caret"></span></a>
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					  	<i class="fas fa-user logoutMainIcon"></i> 
+					  	<?php
+							echo $sessionId;
+						?>
+					  	<span class="caret"></span>
+					  </a>
 					  <ul class="dropdown-menu">
 					    <li><a role='button' data-toggle="modal" data-target="#accountProfile"><i class="fas fa-id-card-alt logoutIcons"></i> Profile</a></li>
 					    <li><a role='button' data-toggle="modal" data-target="#managePassword"><i class="fas fa-key logoutIcons"></i> Manage Password</a></li>
-					    <li><a href="../../index.php"><i class="fas fa-sign-out-alt logoutIcons"></i> Logout</a></li>
+					    <li><a href="../index.php"><i class="fas fa-sign-out-alt logoutIcons"></i> Logout</a></li>
 					  </ul>
 					</li>
 				</ul>
@@ -66,7 +81,10 @@
 		        <div class='main'>
 		        	<!-- Jumbotron -->
 				      <div class="jumbotron homepageContent">
-				        <h1>Welcome Back <span class='idNumber' style='color:#700000'>15100375</span>!</h1>
+				        <h1>Welcome Back <span class='idNumber' style='color:#700000'>
+				        	<?php
+								echo $sessionId;
+							?></span>!</h1>
 				        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
 				        <p><a class="btn btn-lg btn-default getStartedBtn" href="dashboard.php" role="button">Get started today</a></p>
 				      </div>

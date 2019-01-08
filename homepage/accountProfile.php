@@ -1,7 +1,17 @@
 <!-- Modal Profile Information -->
 <div class="modal fade" id="accountProfile" role="dialog">
     <div class="modal-dialog modal-sm">
-    
+    	<?php 
+    		//db connection
+    		include '../mysqlCon.php';
+			if(isset($sessionId)){
+				$sql = "SELECT * FROM faculty WHERE id_number='".$sessionId."'";
+				$result = mysqli_query($conn, $sql);
+
+		        $row = mysqli_fetch_assoc($result);
+		    }
+			
+		?>
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -15,27 +25,22 @@
           	<p>
 		  		<i class="col-md-1 fas fa-id-card-alt accountProfileIcon"></i>
 		  		<span class='personInfoLabel col-md-offset-1'>ID Number:</span> 
-		  		<span class='idNumber'>15100375</span>
+		  		<span class='idNumber'><?php echo $row['id_number']; ?></span>
 		  	</p>
 		  	<p>
 		  		<i class="col-md-1 fas fa-user accountProfileIcon"></i>
 		  		<span class='personInfoLabel col-md-offset-1'>Name:</span> 
-		  		<span class='name'>Kent Michael K. Talisaysay</span>
+		  		<span class='name'><?php echo $row['faculty_name']; ?></span>
 		  	</p>
 		  	<p>
 		  		<i class="col-md-1 fas fa-user-alt accountProfileIcon"></i>
 		  		<span class='personInfoLabel col-md-offset-1'>Position</span> 
-		  		<span class='position'>Intern</span>
-		  	</p>
-		  	<p>
-		  		<i class="col-md-1 fas fa-birthday-cake accountProfileIcon"></i>
-		  		<span class='personInfoLabel col-md-offset-1'>Birthday:</span> 
-		  		<span class='birthDay'>September 15, 1998</span>
+		  		<span class='position'><?php echo $row['position']; ?></span>
 		  	</p>
 		  	<p>
 		  		<i class="col-md-1 fas fa-phone accountProfileIcon"></i>
 		  		<span class='personInfoLabel col-md-offset-1'>Contact Number:</span> 
-		  		<span class='contactNumber'>09664118929</span>
+		  		<span class='contactNumber'><?php echo $row['contact_number']; ?></span>
 		  	</p>
         </div>
       </div>
@@ -46,7 +51,17 @@
 <!-- Modal Manage Password -->
 <div class="modal fade" id="managePassword" role="dialog">
     <div class="modal-dialog modal-sm">
-    
+    	<?php 
+    		//db connection
+    		include '../mysqlCon.php';
+			if(isset($sessionId)){
+				$sql = "SELECT password FROM faculty WHERE id_number='".$sessionId."'";
+				$result = mysqli_query($conn, $sql);
+
+		        $row = mysqli_fetch_assoc($result);
+		    }
+			
+		?>
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -59,7 +74,7 @@
           </p>
           <form method='POST' action=''>
           	<p class='managePassName'><i class="fas fa-unlock-alt accountProfileIcon"></i>Current Password</p>
-          	<input class='form-control managePass' type="text" name="currentPass" value='1234' readonly>
+          	<input class='form-control managePass' type="text" name="currentPass" value=<?php echo $row['password'];?> readonly>
           	
           	<p class='managePassName'><i class="fas fa-lock accountProfileIcon"></i>New Password</p>
           	<input class='form-control managePass' type="text" name="newPass" placeholder="New Password">

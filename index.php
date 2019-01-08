@@ -20,6 +20,7 @@
 		<script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
 
+        <?php include 'mysqlCon.php'; ?>
     </head>
     <body id="page">
         <ul class="cb-slideshow">
@@ -40,26 +41,48 @@
             </div> -->
             <div class="row loginContainer col-md-4 col-md-offset-4">
                 <?php
-                    // if(!isset($_POST['idNumber']) && !isset($_POST['password'])){
-                    //     if(isset($_POST['idNumber']) == '15100375' && isset($_POST['password']) == 'kentmicht'){
-                    //         echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>Incorrect Username/Password</p>";
-                    //         header("Location: homepage/homepage.php");
-                    //     }
-                    //     // else{
-                    //     //     // // header("Location: homepage/homepage.php");
-                    //     //     // // exit;
-                    //     //     // echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>LAVAN!</p>";
-                    //     // }
-                    // }else{
-                    //     echo "<p class='indexNotif'><i class='fas fa-exclamation-circle indexIcon'></i>Username/Password is empty</p>";
+                    if(isset($_POST['idNumber']) && isset($_POST['password'])){
+                        $sql = "SELECT * FROM faculty WHERE id_number='".$_POST['idNumber']."' AND password='".$_POST['password']."'";
+                        $result = $conn->query($sql);
+
+                        $row = mysqli_fetch_assoc($result);
+                        if($row){
+                            // Start the session
+                            session_start();
+                            // Set session variables
+                            $_SESSION["idNumber"] = $row['id_number'];
+                            $_SESSION["facultyName"] = $row['faculty_name'];
+
+                            echo $_SESSION["idNumber"];
+
+                            header('Location: homepage/homepage.php');
+                        }else{
+                            echo "ID Number/Password is incorrect.<br>";
+                        }
+                        // echo $result;
+
+                        // if ($result->num_rows > 0) {
+                        //     // output data of each row
+                        //     while($row = $result->fetch_assoc()) {
+                        //         echo "id: " . $row["id_number"]. " - Name: " . $row["faculty_name"]. "<br>";
+                        //     }
+                        // } else {
+                        //     echo "0 results";
+                        // }
+                        // $conn->close();
+                    }
+
+                    // else{
+                    //     echo "empty fields";
                     // }
+                   
                     
 
                 ?>
                 <i class="fas fa-user-alt"></i>
                 <!-- <i class="fas fa-user-circle"></i> -->
                 <p class='memberLogin'>Member Login</p>
-                <form action="homepage/homepage.php" method='POST'>
+                <form action="index.php" method='POST'>
                     <div class="form-group">
                         <div class="input-group">
                           <div class="input-group-addon"><i class="fas fa-id-badge"></i></span></div>

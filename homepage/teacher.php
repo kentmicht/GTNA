@@ -81,7 +81,7 @@
 				<?php include 'footer.php'; ?>
 			</div>
 		</div>
-    	<?php include '../accountProfile.php'; ?>
+    	<?php include 'accountProfile.php'; ?>
     </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
