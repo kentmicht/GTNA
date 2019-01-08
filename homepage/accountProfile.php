@@ -47,9 +47,17 @@
       
     </div>
 </div>
-
 <!-- Modal Manage Password -->
 <div class="modal fade" id="managePassword" role="dialog">
+	<?php
+	  	if(isset($_POST['confirmPass']) && isset($_POST['newPass'])){
+	  		if($_POST['confirmPass'] == $_POST['newPass']){
+	  			echo 'nice';
+	  		}else{
+	  			echo 'oops!';
+	  		}
+	  	}
+	?>
     <div class="modal-dialog modal-sm">
     	<?php 
     		//db connection
@@ -72,7 +80,7 @@
           <p class='text-center'>
           	<i class="fas fa-key userProfile2"></i>
           </p>
-          <form method='POST' action=''>
+          <form method='POST' action='#managePassword'>
           	<p class='managePassName'><i class="fas fa-unlock-alt accountProfileIcon"></i>Current Password</p>
           	<input class='form-control managePass' type="text" name="currentPass" value=<?php echo $row['password'];?> readonly>
           	
@@ -82,11 +90,12 @@
           	<p class='managePassName'><i class="fas fa-lock accountProfileIcon"></i>Confirm Password</p>
           	<input class='form-control managePass' type="text" name="confirmPass" placeholder="Confirm Password">
           	
-          </form>
+          
         </div>
         <div class="modal-footer">
-        	<button type="button" class="btn btn-default btnModalStudent"><i class="fas fa-pencil-alt"></i> Update</button>
+        	<button type="submit" class="btn btn-default btnModalStudent"><i class="fas fa-pencil-alt"></i> Update</button>
         </div>
+    	</form>
       </div>
       
     </div>

@@ -78,6 +78,20 @@
 		<div class='container-fluid'>
 			<!-- Dashboard -->
 			<div class="row containerContent">
+				<?php
+				  	if(isset($_POST['confirmPass']) && isset($_POST['newPass'])){
+				  		if($_POST['confirmPass'] == $_POST['newPass']){
+				  			include '../mysqlCon.php';
+				  			$sql = "UPDATE `faculty` SET `password`='".$_POST['confirmPass']."' WHERE `id_number` = '".$sessionId."'";
+				  			$result = mysqli_query($conn, $sql);
+				  			if($result){
+				  				echo 'New Password has been updated.';
+				  			}
+				  		}else{
+				  			echo 'New Password and Confirm Password does not match.';
+				  		}
+				  	}
+				?>
 		        <div class='main'>
 		        	<!-- Jumbotron -->
 				      <div class="jumbotron homepageContent">
