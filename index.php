@@ -19,8 +19,6 @@
         <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" media="all"/>
 		<script type="text/javascript" src="assets/js/modernizr.custom.86080.js"></script>
         <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
-
-        <?php include 'mysqlCon.php'; ?>
     </head>
     <body id="page">
         <ul class="cb-slideshow">
@@ -42,8 +40,9 @@
             <div class="row loginContainer col-md-4 col-md-offset-4">
                 <?php
                     if(isset($_POST['idNumber']) && isset($_POST['password'])){
+                        include 'mysqlCon.php';
                         $sql = "SELECT * FROM faculty WHERE id_number='".$_POST['idNumber']."' AND password='".$_POST['password']."'";
-                        $result = $conn->query($sql);
+                        $result = mysqli_query($conn, $sql);
 
                         $row = mysqli_fetch_assoc($result);
                         if($row){
@@ -59,17 +58,6 @@
                         }else{
                             echo "ID Number/Password is incorrect.<br>";
                         }
-                        // echo $result;
-
-                        // if ($result->num_rows > 0) {
-                        //     // output data of each row
-                        //     while($row = $result->fetch_assoc()) {
-                        //         echo "id: " . $row["id_number"]. " - Name: " . $row["faculty_name"]. "<br>";
-                        //     }
-                        // } else {
-                        //     echo "0 results";
-                        // }
-                        // $conn->close();
                     }
 
                     // else{
